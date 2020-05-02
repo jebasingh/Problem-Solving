@@ -66,6 +66,8 @@
     "__memory": "cpp",
     "queue": "cpp",
     "deque": "cpp",
-    "climits": "cpp"
+    "climits": "cpp",
+    "__tree": "cpp",
+    "set": "cpp"
   }
 }
