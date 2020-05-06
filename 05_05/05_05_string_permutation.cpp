@@ -13,32 +13,32 @@ void countNumberOfPossibility(int p, int q, int r, int totalLength, stack<char> 
   }
   else {
     if((s.empty() ||s.top() != 'P') && p > 0) {
-    s.push('P');
-    currentIdx++;
-    p--;
-    countNumberOfPossibility(p, q, r, totalLength, s, currentIdx, counter);
-    s.pop();
-    currentIdx--;
-    p++;
-  }
-  if((s.empty() ||s.top() != 'Q') && q > 0) {
-    s.push('Q');
-    currentIdx++;
-    q--;
-    countNumberOfPossibility(p, q, r, totalLength, s, currentIdx, counter);
-    s.pop();
-    currentIdx--;
-    q++;
-  }
-  if((s.empty() ||s.top() != 'R') && r > 0) {
-    s.push('R');
-    currentIdx++;
-    r--;
-    countNumberOfPossibility(p, q, r, totalLength, s, currentIdx, counter);
-    s.pop();
-    currentIdx--;
-    r++;
-  }
+      s.push('P');
+      currentIdx++;
+      p--;
+      countNumberOfPossibility(p, q, r, totalLength, s, currentIdx, counter);
+      s.pop();
+      currentIdx--;
+      p++;
+    }
+    if((s.empty() ||s.top() != 'Q') && q > 0) {
+      s.push('Q');
+      currentIdx++;
+      q--;
+      countNumberOfPossibility(p, q, r, totalLength, s, currentIdx, counter);
+      s.pop();
+      currentIdx--;
+      q++;
+    }
+    if((s.empty() ||s.top() != 'R') && r > 0) {
+      s.push('R');
+      currentIdx++;
+      r--;
+      countNumberOfPossibility(p, q, r, totalLength, s, currentIdx, counter);
+      s.pop();
+      currentIdx--;
+      r++;
+    }
   }
 }
 
